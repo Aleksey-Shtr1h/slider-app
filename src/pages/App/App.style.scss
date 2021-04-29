@@ -1,0 +1,53 @@
+.main {
+  position: relative;
+
+  margin: 0 auto;
+  min-width: 320px;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  font-family: $mainFont;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+
+  background-color: #f2f2f2;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.users-section,
+.user-albums-section,
+.user-photos-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 5% 10% 0;
+
+  overflow-y: scroll;
+
+  z-index: 1;
+}
+
+.prev-location-link {
+  position: fixed;
+  top: 50%;
+  left: 0;
+
+  width: 100px;
+  height: 100px;
+
+  transform: rotate(180deg);
+}
+
+.prev-location-svg {
+  width: 50%;
+  height: 40%;
+}

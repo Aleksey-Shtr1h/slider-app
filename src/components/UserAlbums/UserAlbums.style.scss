@@ -1,0 +1,30 @@
+.user-albums__list {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+}
+
+.user-albums__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  margin: 5px 5px;
+
+  border: 1px solid #000000;
+  border-radius: 15px;
+
+  cursor: pointer;
+}
+
+.users-albums-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 0 1 25%;
+}
+
+.users-albums-title {
+  text-align: center;
+  padding-bottom: 5%;
+}
